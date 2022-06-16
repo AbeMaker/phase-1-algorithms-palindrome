@@ -1,9 +1,17 @@
+
+function reverse(word){
+  return word.split("").reverse().join("")
+}
+
 function isPalindrome(word) {
   // Write your algorithm here
+  const reversedWord=reverse(word);
+  return word===reversedWord
 }
 
 /* 
   Add your pseudocode here
+  // The word abba can be pronounced the same if started with the prefix and also doing the same with the suffix
 */
 
 /*
@@ -14,7 +22,7 @@ function isPalindrome(word) {
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
-  console.log("=>", isPalindrome("racecar"));
+  console.log("=>", isPalindrome("abba"));
 
   console.log("");
 
