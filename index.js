@@ -24,10 +24,11 @@ if (require.main === module) {
   console.log("Expecting: true");
   console.log("=>", isPalindrome("abba"));
 
-  console.log("");
+  console.log("abba");
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+  console.log("robot")
 }
 
 module.exports = isPalindrome;
